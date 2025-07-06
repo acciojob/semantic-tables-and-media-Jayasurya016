@@ -21,21 +21,29 @@
         img {
             max-width: 200px;
             height: auto;
+            display: block;
+            margin-top: 5px;
         }
         video, audio {
             width: 100%;
             max-width: 400px;
+            display: block;
+            margin-top: 5px;
+        }
+        li {
+            margin-bottom: 15px;
         }
     </style>
 </head>
 <body>
-  
-  
+
+    <!-- Semantic HTML Table -->
     <table>
+        <caption>Student Roll Numbers and Names</caption>
         <thead>
             <tr>
-                <th>Roll Number</th>
-                <th>Name</th>
+                <th scope="col">Roll Number</th>
+                <th scope="col">Name</th>
             </tr>
         </thead>
         <tbody>
@@ -57,20 +65,25 @@
     <!-- Heading between table and ordered list -->
     <h2>List of medias</h2>
 
+    <!-- Ordered List of Media Items -->
     <ol>
         <li>
-            <p>Image:</p>
-            <img src="https://picsum.photos/id/123/200/300" alt="Random example image from picsum.photos">
+            Image: Landscape photograph
+            <img src="https://picsum.photos/id/123/200/300" alt="Scenic mountain landscape with trees and blue sky">
         </li>
         <li>
-            <p>Video:</p>
-            <video controls src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
+            Video: Big Buck Bunny animation
+            <video controls
+                src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4"
+                src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.webm" type="video/webm">
 
             </video>
         </li>
         <li>
-            <p>Audio:</p>
-            <audio controls src="http://commondatastorage.googleapis.com/codeskulptor-assets/Epoq-Lepidoptera.ogg" type="audio/ogg">
+            Audio: Lepidoptera musical piece
+            <audio controls
+                 src="https://commondatastorage.googleapis.com/codeskulptor-assets/Epoq-Lepidoptera.ogg" type="audio/ogg"
+				src="https://commondatastorage.googleapis.com/codeskulptor-assets/Epoq-Lepidoptera.mp3" type="audio/mpeg">
 
             </audio>
         </li>
