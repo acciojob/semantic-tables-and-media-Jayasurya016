@@ -3,15 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Semantic Tables and Media</title>
+    <title>HTML Table Creation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        
+        th {
+            background-color: #f2f2f2;
+        }
+
+        h2 {
+            margin-top: 40px;
+            margin-bottom: 20px;
+        }
+
+        ul, ol {
+            list-style-position: inside;
+            padding-left: 0;
+        }
+
+        li {
+            margin-bottom: 20px;
+        }
+
+        video, audio {
+            display: block;
+            margin-top: 10px;
+        }
+    </style>
 </head>
 <body>
+
+    <h1>Semantic Tables and Media</h1>
+    
+    <h2>Roll Numbers and Names</h2>
 
     <table>
         <thead>
             <tr>
-                <th>Roll number</th>
-                <th>Names</th>
+                <th>Roll Number</th>
+                <th>Name</th>
             </tr>
         </thead>
         <tbody>
@@ -30,20 +76,25 @@
         </tbody>
     </table>
 
-    <h3>List of medias</h3>
+    <h2>List of medias</h2>
 
     <ol>
         <li>
-            <img src="https://picsum.photos/id/123/200/300" alt="Random image from Picsum">
+            <h3>Image</h3>
+            <img src="https://picsum.photos/id/123/200/300" alt="A random landscape image." width="200" height="300">
         </li>
         <li>
-            <video controls>
+            <h3>Video</h3>
+            <video width="320" height="240" controls>
                 <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
+                Your browser does not support the video tag.
             </video>
         </li>
         <li>
+            <h3>Audio</h3>
             <audio controls>
                 <source src="http://commondatastorage.googleapis.com/codeskulptor-assets/Epoq-Lepidoptera.ogg" type="audio/ogg">
+                Your browser does not support the audio element.
             </audio>
         </li>
     </ol>
